@@ -1,0 +1,15 @@
+# INSTALACIÓN DE DEPENDENCIAS DE NPM
+- npm install --save-dev angular@1.6.8
+- npm install --save-dev angular-animate@1.6.8
+- npm install --save-dev angular-aria@1.6.8
+- npm install --save-dev angular-material
+- npm install --save-dev angular-resource@1.6.8
+- npm install --save-dev angular-sanitize@1.6.8
+- npm install --save-dev angular-messages@1.6.8
+- npm install --save-dev angular-route@1.6.8
+- npm install --save-dev angular-ladda
+- npm install --save-dev angular-loading-overlay
+- npm install --save-dev angular-loading-overlay-spinjs
+- npm install --save-dev angular-ui-router
+- npm install satellizer (https://github.com/sahat/satellizer)
+

@@ -1,0 +1,71 @@
+<div class="page-header">
+    <h3>Contact page - Plugin Validation</h3>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <form id="frm_contact" name="frm_contact" novalidate="novalidate" ng-submit="vm.save();">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" 
+                       class="form-control" 
+                       id="name" 
+                       name="name"
+                       ng-model="vm.form.data.name"
+                       ng-required="true" />
+            </div>
+            <div class="form-group">
+                <label for="name">Lastname</label>
+                <input type="text" 
+                       class="form-control" 
+                       id="lastname" 
+                       name="lastname"
+                       ng-model="vm.form.data.lastname"
+                       ng-required="true" />
+            </div>
+            <div class="form-group">
+                <label for="name">Email</label>
+                <input type="email" 
+                        class="form-control" 
+                        id="email" 
+                        name="email"
+                        ng-model="vm.form.data.email"
+                        ng-required="true"
+                        ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/"
+                        ng-pattern-err-type="defaultMessageEmail" />
+            </div>
+            <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" 
+                       class="form-control" 
+                       id="subject" 
+                       name="subject"
+                       ng-model="vm.form.data.subject"
+                       ng-required="true" />
+            </div>
+            <div class="form-group">
+                <label for="name">Message</label>
+                <textarea type="text" 
+                          class="form-control" 
+                          id="message" 
+                          name="message"
+                          ng-model="vm.form.data.message"
+                          ng-required="true"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" 
+                        class="btn btn-primary">
+                    Save
+                </button>
+
+                <button type="reset" 
+                        class="btn btn-default">
+                    Limpiar
+                </button>
+            </div>
+        </form>
+
+        <pre>{{ vm.form.data | json }}</pre>
+        <pre>{{ this.frm_contact.email.$error | json }}</pre>
+    </div>
+</div>

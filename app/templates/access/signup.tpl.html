@@ -1,0 +1,67 @@
+<div class="page-header">
+    <h3>Sign-up</h3>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <form id="frm_signup" name="frm_signup" novalidate="novalidate" ng-submit="signup()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" 
+                        class="form-control" 
+                        id="name" 
+                        name="name"
+                        ng-model="form.data.name"
+                        ng-required="true" />
+            </div>
+            <div class="form-group">
+                <label for="name">Lastname</label>
+                <input type="text" 
+                        class="form-control" 
+                        id="lastname" 
+                        name="lastname"
+                        ng-model="form.data.lastname"
+                        ng-required="true" />
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" 
+                       class="form-control" 
+                       id="username" 
+                       name="username"
+                       ng-model="form.data.username"
+                       ng-required="true"
+                       ng-min-length="3" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" 
+                       class="form-control" 
+                       id="password" 
+                       name="password"
+                       ng-model="form.data.password"
+                       ng-required="true"
+                       ng-min-length="3" />
+            </div>
+            <div class="form-group">
+                <label for="password_confirm">Password confirm</label>
+                <input type="password" 
+                       class="form-control" 
+                       id="password_confirm" 
+                       name="password_confirm"
+                       ng-model="form.data.passwordConfirm"
+                       ng-required="true"
+                       ng-min-length="3"
+                       validate-password-confirm="form.data.password" />
+            </div>
+            <div class="form-group">
+                <button type="submit" 
+                        class="btn btn-primary">
+                    Sign up
+                </button>
+            </div>
+        </form>
+
+        <pre>{{ form.data | json }}</pre>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Angularjs - Demo ocLazyLoad">
+        <meta name="author" content="Gino Luiggi Chirinos Plasencia">
+        <title>ANGULARJS - DEMO OCLAZYLOAD</title>
+
+        <base id="base-app" href="/angularjs-demos/angularjs-demo-oclazyload/app/">
+
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <app-navbar></app-navbar>
+
+        <div id="wrap-container" class="container">
+            <div ng-view></div>
+        </div>
+
+        <app-footer></app-footer>
+          
+        <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="../node_modules/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="../node_modules/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="../node_modules/oclazyload/dist/ocLazyLoad.min.js"></script>
+        <script type="text/javascript" src="./assets/js/libs/oclazyload/oclazyload-custom.js"></script>
+        <script type="text/javascript" src="./assets/js/main/app.js"></script>
+        <script type="text/javascript" src="./assets/js/main/app.constants.js"></script>
+        <script type="text/javascript" src="./assets/js/main/app.routes.js"></script>
+        <script type="text/javascript" src="./assets/js/main/app.run.js"></script>
+        <script type="text/javascript" src="./assets/js/main/app.directives.js"></script>
+        <script type="text/javascript" src="./assets/js/main/app.config.oclazyload.js"></script>
+
+
+
+        <script type="text/javascript">
+           //angular.element(document.getElementById('base-app')).attr('href', window.location.pathname);
+        </script>
+    </body>
+</html>
