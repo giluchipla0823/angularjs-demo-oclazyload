@@ -9,7 +9,7 @@
   "author": "Gino Luiggi Chirinos Plasencia",
   "license": "MIT",
   "devDependencies": {
-    "angular": "1.6.8",
+    "angular": "1.7.9",
     "angular-animate": "1.6.8",
     "angular-aria": "1.6.8",
     "angular-auto-validate": "^1.19.0",
